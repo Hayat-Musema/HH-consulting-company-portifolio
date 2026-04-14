@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
   <link rel="icon" type="image/png" href="assets/HH Logo.png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -24,6 +25,9 @@
       </button>
     </div>
     <nav class="nav-menu">
+      <!-- Fixed Close Button -->
+  <button class="menu-close" aria-label="Close navigation">✕</button>
+      <a href="#hero">Home</a>
       <a href="#about-us">About Us</a>
       <a href="#team">Our Team</a>
       <a href="#legacy-vision">Legacy & Vision</a>
@@ -36,27 +40,34 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-visual"></div>
+   <section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
 
-      <div class="hero-content">
-        <p class="eyebrow">Engineered Excellence</p>
-        <h1 class="hero-title">
-          HH Consulting <span>Architects & Engineers</span>
-        </h1>
-        <p class="hero-copy">
-          We create with heart and build with mind. Redefining the intersection of structural integrity and aesthetic vision.
-        </p>
-        <a class="hero-button" href="#projects">
-          Explore Projects
-          <span class="arrow">→</span>
-        </a>
-      </div>
-    </section>
+  <div class="hero-content">
+    
+    <!---<p class="eyebrow">Engineered Excellence</p>-->
+    <h1 class="hero-title">
+      HH Consulting <span>Architects & Engineers</span>
+    </h1>
+    <p class="hero-copy">
+      We create with heart and build with mind. Redefining the intersection of structural integrity and aesthetic vision.
+    </p>
+    <div class="hero-buttons">
+      <a class="hero-button primary" href="#projects">
+        Explore Projects
+      </a>
+      <a class="hero-button secondary" href="#capabilities">
+        Our Services
+      </a>
+    </div>
+  </div>
+</section>
 
     <section class="about-us" id="about-us">
+       <div class="about-inner animate-on-scroll">
       <div class="about-overlay"></div>
+     
       <div class="about-inner">
         <div class="about-copy">
           <p class="section-label">About Us</p>
@@ -69,24 +80,24 @@
           </p>
         </div>
       </div>
+      </div>
     </section>
 
     
 
     <section class="legacy-vision" id="legacy-vision">
-      <div class="legacy-inner">
-        <div class="legacy-image-card">
-          <img src="assets/Multi.png" alt="Legacy and vision" />
-        </div>
+      <div class="legacy-inner animate-on-scroll">
+      
 
-        <div class="legacy-copy">
+<div class="legacy-copy">
           <p class="section-label">Legacy & Vision</p>
           <h2>Multidisciplinary Mastery.</h2>
           <p class="section-text">
             HH Consulting Architects & Engineers PLC operates at the frontier of local ingenuity and global standards. With over two decades of delivering complex infrastructural landmarks, we blend technical rigor with artistic intuition.
           </p>
 
-          <div class="legacy-stats">
+
+<div class="legacy-stats">
             <div class="stat-item">
               <span>250+</span>
               <small>Impactful Projects</small>
@@ -96,12 +107,16 @@
               <small>Award Wins</small>
             </div>
           </div>
+</div>
+        <div class="legacy-image-card">
+          <img src="assets/Multi.png" alt="Legacy and vision" />
         </div>
-      </div>
+        </div>
     </section>
 
     <section class="capabilities" id="capabilities">
-      <div class="capabilities-inner">
+      <div class="capabilities-inner animate-on-scroll">
+  
         <div class="capabilities-copy">
           <p class="section-label">Capabilities</p>
           <h2>Our Expertise</h2>
@@ -115,45 +130,56 @@
             <div class="capability-icon">A</div>
             <div>
               <h3>Architectural & Engineering Design</h3>
-              <p>Synthesis of form and function for iconic structures.</p>
+              <p>->Architectural design</p>
+              <p>->Electrical and Mechanical systems design</p>
+              <p>->Sanitary and plumbing systems</p>
             </div>
           </article>
           <article class="capability-card">
             <div class="capability-icon">⚒</div>
             <div>
               <h3>Infrastructure & Civil Engineering</h3>
-              <p>Building the backbone of modern urban environments.</p>
+              <p>->Road and highway design</p>
+              <p>->Bridge and transportation structures</p>
+              <p>->Infrastructure Master planning</p>
             </div>
           </article>
           <article class="capability-card">
             <div class="capability-icon">⇶</div>
             <div>
-              <h3>Urban & Environmental Planning</h3>
-              <p>Sustainable growth strategies for resilient cities.</p>
+              <h3>Urban & Environmental service</h3>
+              <p>->Urban and regional Master plans</p>
+              <p>->Environmental impact assessment</p>
+              <p> ->Landscape Architecture and Design</p>
             </div>
           </article>
           <article class="capability-card">
             <div class="capability-icon">🏗</div>
             <div>
-              <h3>Construction Supervision</h3>
-              <p>Upholding the highest standards during site execution.</p>
+              <h3>Construction Supervision & project managment  </h3>
+              <p>->Contract administration.</p>
+              <p>->Quaality control and assurance</p>
+              <p>->Site supervision and site analysis</p>
             </div>
           </article>
           <article class="capability-card">
             <div class="capability-icon">▣</div>
             <div>
               <h3>Feasibility Studies</h3>
-              <p>Data-driven studies to validate project viability.</p>
+              <p>->Feasibility studies for public and private projects</p>
+              <p>->Strategic planning and site analysis</p>
+              <p>->concept development and cost estimations.</p>
             </div>
           </article>
         </div>
       </div>
+      
     </section>
 
     <section class="team" id="team">
-      <div class="team-inner">
+      <div class="team-inner animate-on-scroll">
         <p class="section-label">Our Team</p>
-        <h2>Meet Our Staff Members</h2>
+        <h2>Meet Our Staff Members</h2><br><br>
         <div class="team-grid">
           <article class="team-card">
             <div class="team-image">
@@ -235,9 +261,11 @@
           </article>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="projects" id="projects">
+      <div class="projects-inner animate-on-scroll">
       <div class="projects-inner">
         <h2>Projects</h2>
         <div class="projects-grid" id="categories-grid">
@@ -456,9 +484,11 @@
           </div>
         </div>
       </div>
-    </section>
+      </div>
+        </section>
 
     <section class="achievements" id="achievements">
+      <div class="achievements-inner animate-on-scroll">
       <div class="achievements-inner">
         <h2>Achievements</h2>
         <div class="achievements-grid">
@@ -473,9 +503,11 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="potential-clients" id="potential-clients">
+      <div class="potential-clients-inner animate-on-scroll">
       <div class="potential-clients-inner">
         <h2>Potential Clients</h2>
         <div class="clients-grid">
@@ -490,16 +522,21 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section class="contact-us" id="contact-us">
-        <div class="contact-copy">
+        <div class="contact-inner animate-on-scroll">
+        <div class="contact-main-side">
+          <div class="contact-intro">
           <p class="section-label">Contact Us</p>
           <h2>Get In Touch</h2>
-          <p class="section-text">
-            Ready to bring your vision to life? Let's discuss your project and explore how we can collaborate.
+          <p class="section-text"style="font-size: 1.1rem; margin-bottom: 2rem">
+            Ready to bring your vision to life?</p>
+            <p></p> Let's discuss and collaborate.
           </p>
-      <div class="contact-inner">
+        </div>
+
         <div class="contact-form">
           <form>
             <div class="form-group">
@@ -521,16 +558,16 @@
             <button type="submit" class="submit-btn">Send Message</button>
           </form>
         </div>
-
-        
-          <div class="contact-info">
+      </div>
+      <div class="contact-details-sidebar">
+ <div class="contact-info">
             <div class="contact-item">
               <span class="contact-icon">📍</span>
-              <span class="contact-text">22 Mazoria Efrata building, 3rd floor <br><br>Addis Ababa, Ethiopia</span>
+              <span class="contact-text">22 Mazoria Efrata building, <br><br>Addis Ababa, Ethiopia</span>
             </div>
             <div class="contact-item">
               <span class="contact-icon">📧</span>
-              <span class="contact-text">hhconsultingarchitectengineers@gmail.com</span>
+              <span class="contact-text" style="font-size: 1rem;">hhconsultingarchitectengineers@gmail.com</span>
             </div>
             <div class="contact-item">
               <span class="contact-icon">📞</span>
@@ -541,6 +578,11 @@
               <span class="contact-icon">🌐</span>
               <span class="contact-text">https://hhconsult.com</span>
             </div>
+            </div>
+
+
+        
+         
          
           <p class="follow-us">Follow Us</p>
 
@@ -550,9 +592,8 @@
             <a href="#" class="social-link" title="LinkedIn">in</a>
             <a href="#" class="social-link" title="YouTube">▶</a>
              </div>
-          </div>
-        </div>
       </div>
+    </div>
     </section>
   </main>
 
